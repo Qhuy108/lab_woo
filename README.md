@@ -10,8 +10,6 @@ Trong thư mục `d:\Lab_WooCommerce`:
 1. [docker-compose.yml](file:///d:/Lab_WooCommerce/docker-compose.yml): Cấu hình 4 container LEMP (Nginx, WordPress, MariaDB, phpMyAdmin).
 2. [nginx/default.conf](file:///d:/Lab_WooCommerce/nginx/default.conf): File cấu hình Nginx URL rewrite.
 3. [php/uploads.ini](file:///d:/Lab_WooCommerce/php/uploads.ini): Cấu hình RAM và upload limit cho PHP.
-4. [products_sample_import.csv](file:///d:/Lab_WooCommerce/products_sample_import.csv): File CSV chứa sẵn 5 sản phẩm công nghệ (Laptop, Chuột, Bàn phím, Tai nghe) có sẵn danh mục, hình ảnh, giá và tồn kho phục vụ **Mục tiêu 5 (Import Product)**.
-5. [products_update_price_quantity.csv](file:///d:/Lab_WooCommerce/products_update_price_quantity.csv): File CSV chứa SKU, giá mới và tồn kho mới phục vụ **Mục tiêu 7 (Import quantity, price)**.
 
 ---
 
@@ -77,7 +75,7 @@ Trong thư mục `d:\Lab_WooCommerce`:
 
 ### Mục tiêu 5: Import Sản Phẩm Bằng CSV
 1. Vào **Products** ➔ **Import**.
-2. Chọn file [products_sample_import.csv](file:///d:/Lab_WooCommerce/products_sample_import.csv) đã chuẩn bị sẵn trong thư mục.
+2. Chọn file csv/txt cua thay đã chuẩn bị sẵn trong thư mục.
 3. Bấm **Continue** ➔ Màn hình ánh xạ cột (Column mapping) hiện ra, WooCommerce sẽ tự động nhận diện tất cả các cột.
 4. Bấm **Run the importer** và chờ hoàn tất.
 5. Kiểm tra danh sách: Toàn bộ 5 sản phẩm với giá, hình ảnh và danh mục sẽ xuất hiện đầy đủ trong cửa hàng.
@@ -98,7 +96,7 @@ Trong thư mục `d:\Lab_WooCommerce`:
 
 ### Mục tiêu 7: Import Cập Nhật Số Lượng & Giá Bằng CSV
 1. Vào **Products** ➔ **Import**.
-2. Chọn file [products_update_price_quantity.csv](file:///d:/Lab_WooCommerce/products_update_price_quantity.csv).
+2. Chọn file csv/txt.
 3. **QUAN TRỌNG:** Tích vào ô **"Update existing products"** (Cập nhật các sản phẩm hiện có theo SKU).
 4. Bấm **Continue** ➔ Ánh xạ cột `SKU`, `Regular price`, `Sale price`, `Stock`.
 5. Bấm **Run the importer**.
